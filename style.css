@@ -1,124 +1,127 @@
-/* General Settings */
-body {
-    font-family: "Times New Roman", serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F2EDE7; /* Light cream background */
-    color: #3E0201; /* Wine color text */
+/* COLORS */
+:root{
+  --cream: #fdf6f0;     /* arka plan */
+  --wine:  #7b2b3b;     /* yazı / buton */
+  --wine-dark: #5a2026; /* hover */
+  --muted: #666666;
 }
 
-/* Header and Hero Section */
-.hero-section {
-    background-color: #F2EDE7;
-    color: #3E0201;
-    text-align: center;
-    padding: 100px 20px;
+/* Reset & body */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Inter, "Times New Roman", serif;
+  background: var(--cream);
+  color: var(--wine);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
 }
 
-.hero-title {
-    font-family: 'Cinzel', serif;
-    font-size: 64px;
-    margin: 0;
+/* Topbar - right aligned tiny icon */
+.topbar{
+  width:100%;
+  padding:14px 28px;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+}
+.topbar .tiktok-link svg{ fill: var(--wine); opacity:0.9; }
+
+/* Hero */
+.hero{
+  flex:1 0 auto;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:80px 20px;
+  max-width:980px;
+  margin:0 auto;
 }
 
-h2 {
-    font-size: 28px;
-    margin: 10px 0;
+.name{
+  font-family: 'Cinzel', serif;
+  font-weight:700;
+  font-size:56px;
+  letter-spacing:4px;
+  margin:0 0 12px 0;
+  color:var(--wine);
 }
 
-.hero-section p {
-    font-size: 18px;
-    margin-top: 20px;
+.subtitle{
+  margin:0 0 28px 0;
+  font-size:18px;
+  color:var(--wine);
+  opacity:0.95;
 }
 
-/* Services and Blog */
-.services {
-    padding: 50px 20px;
-    text-align: center;
+/* CTA buttons */
+.cta-row{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-top:8px;
 }
 
-.services h2 {
-    font-size: 32px;
-    color: #3E0201;
+.cta{
+  display:inline-block;
+  text-decoration:none;
+  padding:14px 28px;
+  border-radius:999px; /* pill */
+  font-weight:600;
+  font-size:18px;
+  border:2px solid transparent;
+  transition:all .18s ease;
+  background:transparent;
+  color:var(--wine);
 }
 
-.service-boxes {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.cta.primary{
+  background:var(--wine);
+  color:var(--cream);
+  box-shadow: 0 6px 18px rgba(123,43,59,0.12);
+  border-color: rgba(0,0,0,0.02);
 }
 
-.service-box {
-    display: inline-block;
-    background-color: #3E0201;
-    color: #F2EDE7;
-    padding: 15px 25px;
-    border-radius: 10px;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 18px;
+.cta:hover{
+  transform:translateY(-3px);
+}
+.cta.primary:hover{
+  background:var(--wine-dark);
 }
 
-.service-box:hover {
-    background-color: #D70000;
+/* Footer with profile - picture centered at bottom */
+.site-footer{
+  text-align:center;
+  padding:36px 16px;
+  background:transparent;
+  margin-top:auto;
 }
 
-/* Blog Section */
-.blog {
-    padding: 40px 20px;
-    text-align: center;
+.profile{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid var(--cream);
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+  display:block;
+  margin:0 auto 12px auto;
 }
 
-.blog h2 {
-    font-size: 32px;
-    color: #3E0201;
-}
+/* Copyright small */
+.site-footer p{ margin:6px 0 0 0; color:var(--muted); font-size:14px; }
 
-.blog a {
-    color: #3E0201;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-.blog a:hover {
-    text-decoration: underline;
-}
-
-/* Profile Picture */
-.profile-section {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* Contact Button */
-.btn {
-    display: inline-block;
-    background-color: #3E0201;
-    color: #F2EDE7;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-.btn:hover {
-    background-color: #D70000;
-}
-
-/* Footer */
-footer {
-    background-color: #3E0201;
-    color: #F2EDE7;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+/* Responsive adjustments */
+@media (max-width:520px){
+  .name{ font-size:36px; letter-spacing:2px; }
+  .cta{ padding:12px 18px; font-size:16px; }
+  .profile{ width:96px; height:96px; }
+  .topbar{ padding:10px 16px; }
 }
