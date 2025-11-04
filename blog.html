@@ -3,134 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adalin Sohtorik | Kişisel Gelişim Mentoru</title>
+  <title>Blog – Adalin | Kişisel Gelişim Mentoru</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    /* Body Styling */
     body {
-      background-color: #F2EDE7; /* Light Cream */
-      color: #3E0201; /* Dark Red (Bordo) */
-      font-family: "Times New Roman", serif;
+      font-family: 'Lora', serif;
+      background-color: #fdf6f0;
+      color: #7b2b3b;
       margin: 0;
-      padding: 20px;
+      padding: 0;
     }
 
-    /* Header Styling */
     header {
       text-align: center;
-      padding: 150px 20px;
-      background-image: url('https://github.com/adlnshtrk/adalinsohtorik/blob/main/images/banner.jpg?raw=true'); 
-      background-size: cover;
-      background-position: center;
-      color: #F2EDE7; /* Light Cream for header text */
-    }
-    
-    h1 {
-      font-size: 48px;
-      margin: 10px 0;
+      padding: 40px 20px;
     }
 
-    h2 {
-      font-size: 24px;
-      font-weight: normal;
-      margin: 10px 0;
+    header h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #7b2b3b;
     }
 
-    /* Profile Picture Styling */
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #F2EDE7;
-      display: block;
-      margin: 20px auto;
+    header p {
+      font-size: 1.1em;
+      color: #9a3f4d;
     }
 
-    /* Button Styling */
-    .btn {
-      display: inline-block;
-      background-color: #F2EDE7; /* Light Cream */
-      color: #3E0201; /* Dark Red (Bordo) */
-      padding: 10px 20px;
-      margin: 10px 5px;
-      border-radius: 5px;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    .btn:hover {
-      background-color: #e6dfd9; /* Light grey hover effect */
+    .blog-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
     }
 
-    /* Section Styling */
-    section {
-      padding: 50px 20px;
-      text-align: center;
+    .blog-card {
+      background-color: #fffaf7;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease;
     }
 
-    /* Article Styling for Blog Posts */
-    article {
-      margin-bottom: 30px;
-    }
-    article h3 {
-      font-size: 22px;
-      color: #3E0201; /* Dark Red */
-    }
-    article p {
-      font-size: 18px;
-      color: #3E0201; /* Dark Red */
-    }
-    article a {
-      color: #F2EDE7; /* Light Cream */
-      text-decoration: none;
-      font-weight: bold;
-    }
-    article a:hover {
-      text-decoration: underline;
+    .blog-card:hover {
+      transform: scale(1.02);
     }
 
-  </style>
-</head>
-<body>
-
-<!-- Header Section -->
-<header>
-    <h1>Adalin Sohtorik</h1>
-    <h2>Kişisel Gelişim Mentoru</h2>
-</header>
-
-<!-- Main Section with Services and Blog -->
-<section>
-  <h2>Hizmetlerim & Blog</h2>
-  <a href="blog.html" class="btn">Blog Yazıları</a>
-  <a href="#contact" class="btn">İletişim</a>
-  <a href="https://www.advicemy.com/danisman/adalin-sohtorik" target="_blank" class="btn">Danışmanlık</a>
-</section>
-
-<!-- Blog Section -->
-<section id="blog">
-  <h2>Son Blog Yazıları</h2>
-  <article>
-    <h3><a href="#">Kişisel Gelişim İçin 5 Günlük Plan</a></h3>
-    <p>Bu yazıda, kişisel gelişim için 5 günlük bir plan öneriyorum. Hedeflerinize ulaşmanın yollarını keşfedin!</p>
-  </article>
-
-  <article>
-    <h3><a href="#">Başarıya Giden Yolda Motivasyonun Önemi</a></h3>
-    <p>Motivasyonun hayatımızdaki rolü üzerine düşündük ve başarıya giden yolda nasıl doğru bir motivasyon geliştirebiliriz?</p>
-  </article>
-
-  <article>
-    <h3><a href="#">Mindfulness ve Psikolojik Sağlık</a></h3>
-    <p>Mindfulness'ın psikolojik sağlığımız üzerindeki etkileri hakkında kapsamlı bir yazı. Sadece stresle baş etmekle kalmaz, aynı zamanda zihinsel sağlığımıza da katkı sağlar.</p>
-  </article>
-</section>
-
-<!-- Contact Section -->
-<section id="contact">
-  <h2>İletişim</h2>
-  <p>Danışmanlık veya sorularınız için bana mail atabilirsiniz:</p>
-  <a href="mailto:adlnshtrk@yahoo.com" class="btn">Mail Gönder</a>
-</section>
-
-</body>
-</html>
+    .blog-card
