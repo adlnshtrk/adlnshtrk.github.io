@@ -3,62 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dünya Sizi Seviyor - Adalin Sohtorik</title>
+  <title>Yoğunlaşmış Sıkıntılar - Adalin Sohtorik</title>
   <style>
     body {
       font-family: "Georgia", serif;
-      background-color: #faf9f7;
-      color: #333;
+      background-color: #faf9f8;
+      color: #2e1f1f;
       margin: 0;
       padding: 0;
+      line-height: 1.7;
     }
 
-    .container {
-      max-width: 800px;
-      margin: 80px auto;
-      padding: 20px;
+    header {
       text-align: center;
+      padding: 30px 20px 10px;
     }
 
-    .home-button {
-      position: fixed;
-      top: 20px;
-      left: 20px;
+    header h1 {
+      font-family: "The Seasons", serif;
+      font-size: 30px;
+      color: #4a1c24;
+      margin-bottom: 10px;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 18px;
       background-color: #4a1c24;
-      color: #fff;
-      padding: 8px 16px;
+      color: white;
       border-radius: 20px;
       text-decoration: none;
       font-size: 14px;
-      transition: background 0.3s;
+      transition: background-color 0.3s;
     }
 
-    .home-button:hover {
+    .back-button:hover {
       background-color: #6d2c37;
-    }
-
-    .cover-image {
-      display: block;
-      margin: 40px auto 20px;
-      width: 300px; /* kare ve büyük boyut */
-      height: 300px;
-      object-fit: cover;
-      border-radius: 12px; /* yuvarlak değil */
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-
-    h1 {
-      font-family: "The Seasons", serif;
-      font-size: 32px;
-      margin-bottom: 20px;
-      color: #4a1c24;
-    }
-
-    p {
-      line-height: 1.8;
-      font-size: 18px;
-      text-align: justify;
-      color: #444;
     }
 
     hr {
@@ -67,37 +48,63 @@
       width: 60%;
       margin: 20px auto;
     }
+
+    .cover-image {
+      display: block;
+      margin: 40px auto 20px;
+      width: 320px;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+    }
+
+    .content {
+      max-width: 750px;
+      margin: 0 auto;
+      padding: 20px;
+      font-size: 18px;
+      text-align: justify;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .session-button {
+      background-color: #4a1c24;
+      color: #fff;
+      font-size: 16px;
+      padding: 12px 26px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .session-button:hover {
+      background-color: #6d2c37;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #4a1c24;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
 
-  <a href="index.html" class="home-button">← Ana Sayfa</a>
-
-  <div class="container">
-    <img src="dunya.jpg" alt="kapak" class="cover-image">
-
-    <h1>Dünya Sizi Seviyor</h1>
+  <header>
+    <h1>Yoğunlaşmış Sıkıntılar</h1>
+    <a href="blog.html" class="back-button">← Ana Sayfa</a>
     <hr>
+  </header>
 
-    <p>
-      Acı sadece bize gelmiyor. Bu, eylemlerimizin, kararlarımızın veya eylemsizliğimizin bir sonucudur.
-      Acı, doğru yoldan saptığımızda yanan bir nevi kırmızı ışıktır. Acı, bize her zaman neyin dikkat edilmesi ve düzeltilmesi gerektiğini gösteren sadık yoldaşımızdır.
-      Ne yazık ki çoğu durumda acının sesine kulak vermek istemiyoruz. Onu, hayatımızı mahvetmeye gelen bir düşman olarak algılıyoruz. Oluşmasının nedenlerini aramak yerine, onu basitçe bastırırız, hoş izlenimlerle boğmaya çalışırız. Ancak acı düşman değildir. Bu, hayatta kalmamıza ve ruhsal olarak büyümemize yardım etmeye gelen bilge bir öğretmendir.
-      <br><br>
-      Acı bize kendimize ve ihtiyaçlarımıza dikkat etmeyi öğretir. Bizi kendi davranışlarımızı analiz etmeye ve kararlarımızı yeniden gözden geçirmeye zorlar. Acı sayesinde kendimize ve başkalarına karşı daha sorumlu olmayı ve şefkatli olmayı öğrenebiliriz.
-      <br><br>
-      Acı bize şefkati öğretir. Acı yaşadığımızda başkalarının acısını daha iyi anlar ve daha empatik oluruz. Acı, insanlık duygumuzu ve ihtiyacı olanlara yardım etme arzumuzu geliştirmemize yardımcı olur.
-      <br><br>
-      Pelevin'in sevdiğim bir sözü vardır: “Hayat çok tuhaf. Kuyudan çıkmak için içine düşmeniz gerekir.”
-      <br><br>
-      Acı bize hayatın değerini bilmeyi öğretir. Acı yaşadığımızda, acının olmadığı anların kıymetini bilmeye başlarız. Acı bizi bizim için gerçekten neyin önemli olduğunu düşünmeye ve önemsiz şeylerle zaman kaybetmemeye zorlar.
-      <br><br>
-      Acıdan korkulmaması veya göz ardı edilmemesi gerekir. Acı, daha iyi olmamıza yardım etmeye gelen bir öğretmenimizdir.
-      Kimse mükemmel değildir ve hepimiz öyle ya da böyle hata yaparız.
-      <br><br>
-      “Dünya seni seviyor. Ve bir gün seni sarsmak için sana sert bir şekilde vuracak çünkü aklını başına toplamanın tek yolu bu.”
-    </p>
-  </div>
+  <img src="yogun.jpg" alt="Yoğunlaşmış Sıkıntılar" class="cover-image">
 
-</body>
-</html>
+  <div class="content">
+    <p>Hayatımı
